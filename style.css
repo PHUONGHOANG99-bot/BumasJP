@@ -122,25 +122,34 @@ main {
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 56px 1fr 56px;
+    grid-template-columns: 74px 1fr 74px;
     column-gap: 10px;
     align-items: center;
-    height: 50px;
+    height: 58px;
 }
 
 .header__logo {
-    width: 56px;
+    width: 74px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    background: transparent;
 }
 
 .header__slogan {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #0c4a6e;
     line-height: 1.2;
     margin: 0;
     text-align: center;
+    justify-self: center;
+    max-width: 290px;
+}
+
+.header__spacer {
+    width: 74px;
+    height: 1px;
 }
 
 .header__logo h1 {
@@ -152,9 +161,11 @@ main {
 }
 
 .logo__img {
-    height: 35px;
+    height: 44px;
     width: auto;
     object-fit: contain;
+    background: transparent;
+    mix-blend-mode: multiply;
     transition: transform 0.3s ease;
 }
 
@@ -347,7 +358,7 @@ main {
 /* ============================= */
 
 .hero {
-    margin-top: 70px;
+    margin-top: 78px;
     height: auto;
     background: transparent;
     overflow: visible;
@@ -555,33 +566,59 @@ main {
 .shipping-badges {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 12px;
+    margin-bottom: 12px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .badge-stock,
 .shipping-time {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 9px;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 700;
     width: fit-content;
-    padding: 9px 15px;
-    border-radius: 20px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    letter-spacing: 0.1px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
 }
 
 .badge-stock {
     color: #fff;
-    background: linear-gradient(135deg, #27ae60, #229954);
-    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.25);
+    background: linear-gradient(135deg, #1fbe64, #179955);
 }
 
 .shipping-time {
     color: #fff;
-    background: linear-gradient(135deg, var(--secondary-color), #ff4757);
-    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.25);
+    background: linear-gradient(135deg, #ff6f61, #ff4d4f);
+}
+
+.badge-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.32);
+    flex-shrink: 0;
+    font-size: 0.85rem;
+}
+
+.badge-icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.badge-flag {
+    margin-left: 5px;
+    font-size: 0.95rem;
+    line-height: 1;
 }
 
 .shipping-note {
@@ -1144,12 +1181,16 @@ main {
     }
 
     .header__slogan {
-        font-size: 0.8rem;
+        font-size: 0.86rem;
         max-width: 220px;
     }
 
+    .logo__img {
+        height: 40px;
+    }
+
     .hero {
-        margin-top: 50px;
+        margin-top: 72px;
         height: auto;
     }
 
@@ -1223,7 +1264,7 @@ main {
 
 @media (max-width: 480px) {
     .header__container {
-        height: 50px;
+        height: 56px;
     }
 
     .header__nav {
@@ -1231,19 +1272,28 @@ main {
     }
 
     .header__container {
-        grid-template-columns: 50px 1fr 50px;
+        grid-template-columns: 66px 1fr 66px;
         column-gap: 8px;
         padding: 0 10px;
     }
 
     .header__slogan {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 700;
+        max-width: 210px;
+    }
+
+    .header__spacer {
+        width: 66px;
+    }
+
+    .logo__img {
+        height: 38px;
     }
 
     .hero {
         height: auto;
-        margin-top: 50px;
+        margin-top: 62px;
     }
 
     .container-video {
@@ -1389,13 +1439,23 @@ main {
     .shipping-badges {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 8px;
     }
 
     .badge-stock,
     .shipping-time {
-        font-size: 0.85rem;
-        padding: 7px 11px;
+        font-size: 0.84rem;
+        padding: 8px 12px;
+    }
+
+    .badge-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .badge-icon svg {
+        width: 12px;
+        height: 12px;
     }
 
     .shipping-note {

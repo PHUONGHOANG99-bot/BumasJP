@@ -17,6 +17,7 @@
                 <img src="assets/logo/logobumas.png" alt="BUMAS Logo" class="logo__img" onclick="location.reload()" style="cursor: pointer;">
             </div>
             <p class="header__slogan">Món quà ý nghĩa - Thay lời yêu thương</p>
+            <span class="header__spacer" aria-hidden="true"></span>
         </div>
     </header>
 
@@ -173,8 +174,21 @@
                     <div class="price-value">11,000円</div>
                 </div>
                 <div class="shipping-badges">
-                    <span class="badge-stock">✓ Hàng sẵn tại Nhật</span>
-                    <span class="shipping-time">⚡ Ship 1-2 ngày</span>
+                    <span class="badge-stock">
+                        <span class="badge-icon" aria-hidden="true">✓</span>
+                        <span>Hàng sẵn tại Nhật <span class="badge-flag" aria-hidden="true">🇯🇵</span></span>
+                    </span>
+                    <span class="shipping-time">
+                        <span class="badge-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 3h15v12H1z"></path>
+                                <path d="M16 8h4l3 3v4h-7z"></path>
+                                <circle cx="5.5" cy="17.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="17.5" r="2.5"></circle>
+                            </svg>
+                        </span>
+                        <span>Ship 1-2 ngày</span>
+                    </span>
                 </div>
                 <p class="shipping-note">Giá trên đã bao gồm phí ship toàn Nhật Bản (Trừ Hokkaido & Okinawa)</p>
                 
