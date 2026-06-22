@@ -101,7 +101,6 @@ class VideoSlider {
         this.dots = document.querySelectorAll('.video-dot');
         this.prevBtn = document.querySelector('.video-btn--prev');
         this.nextBtn = document.querySelector('.video-btn--next');
-        this.playBtn = document.querySelector('.video-play-btn');
         
         this.currentIndex = 0;
         this.autoPlayInterval = null;
@@ -114,19 +113,9 @@ class VideoSlider {
     init() {
         this.prevBtn.addEventListener('click', () => this.prevSlide());
         this.nextBtn.addEventListener('click', () => this.nextSlide());
-        this.playBtn.addEventListener('click', () => this.togglePlayVideo());
         
         this.dots.forEach((dot, index) => {
             dot.addEventListener('click', () => this.goToSlide(index));
-        });
-
-        // Lắng nghe sự kiện video
-        this.items.forEach(item => {
-            const video = item.querySelector('video');
-            if (video) {
-                video.addEventListener('play', () => this.hidePlayButton());
-                video.addEventListener('pause', () => this.showPlayButton());
-            }
         });
 
         this.track.addEventListener('mouseenter', () => this.stopAutoPlay());
@@ -135,28 +124,9 @@ class VideoSlider {
         this.startAutoPlay();
     }
 
-    hidePlayButton() {
-        this.playBtn.classList.add('hidden');
-    }
-
-    showPlayButton() {
-        this.playBtn.classList.remove('hidden');
-    }
-
     getCurrentVideo() {
         const currentVideoItem = this.items[this.currentIndex];
         return currentVideoItem.querySelector('video');
-    }
-
-    togglePlayVideo() {
-        const video = this.getCurrentVideo();
-        if (video) {
-            if (video.paused) {
-                video.play();
-            } else {
-                video.pause();
-            }
-        }
     }
 
     pauseAllVideos() {
@@ -526,7 +496,7 @@ class CustomerReviewsSlider {
 
     startAutoPlay() {
         this.stopAutoPlay();
-        this.autoPlayInterval = setInterval(() => this.nextSlide(), 2000);
+        this.autoPlayInterval = setInterval(() => this.nextSlide(), 6000);
     }
 
     stopAutoPlay() {

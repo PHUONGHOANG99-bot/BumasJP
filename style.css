@@ -300,9 +300,9 @@ main {
     max-width: 500px;
     z-index: 60;
     padding: 8px 10px calc(12px + env(safe-area-inset-bottom));
-    background: linear-gradient(180deg, rgba(7, 34, 78, 0.08), rgba(7, 34, 78, 0.55));
-    backdrop-filter: blur(12px);
-    box-shadow: 0 -10px 24px rgba(7, 34, 78, 0.22);
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
 }
 
 .consult-fixed-bar__btn {
@@ -680,43 +680,6 @@ main {
 
 .video-btn--next {
     right: 10px;
-}
-
-/* Play Button */
-.video-play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 15;
-    width: 50px;
-    height: 50px;
-    border: none;
-    background: transparent;
-    color: rgba(0, 168, 255, 0.85);
-    cursor: pointer;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease, transform 0.2s ease;
-}
-
-.video-play-btn:hover {
-    color: rgba(0, 168, 255, 1);
-    transform: translate(-50%, -50%) scale(1.15);
-}
-
-.video-play-btn.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.video-play-btn svg {
-    width: 32px;
-    height: 32px;
-    fill: currentColor;
-    margin-left: 2px;
 }
 
 /* Video Dots */
@@ -1281,6 +1244,19 @@ main {
     .hero {
         height: auto;
         margin-top: 50px;
+    }
+
+    .container-video {
+        padding: 0;
+    }
+
+    .video-slider-container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .video-thumbnail {
+        border-radius: 0;
     }
 
     .slider-container {
