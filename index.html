@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm của Tôi - Giới Thiệu Tuyệt Vời</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="assets/logo/logobumas.png" alt="BUMAS Logo" class="logo__img" onclick="location.reload()" style="cursor: pointer;">
+            </div>
+            <p class="header__slogan">Món quà ý nghĩa - Thay lời yêu thương</p>
+        </div>
+    </header>
+
+    <!-- Floating Action Buttons -->
+    <aside class="floating-actions" aria-label="Liên hệ nhanh">
+        <a href="https://www.facebook.com/nekoquatang" class="floating-btn floating-btn-facebook" target="_blank" title="Facebook">
+            <svg class="floating-btn__icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+            </svg>
+            <span class="floating-btn__label">Facebook</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@nekoshopjp" class="floating-btn floating-btn-tiktok" target="_blank" title="TikTok">
+            <svg class="floating-btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+            </svg>
+            <span class="floating-btn__label">TikTok</span>
+        </a>
+    </aside>
+
+    <main>
+    <!-- Hero Section with Image Slider -->
+    <section id="home" class="hero">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide slide-active">
+                    <img src="assets/images/slider/1.jpg" alt="Ảnh slider 1">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/2.jpg" alt="Ảnh slider 2">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/3.jpg" alt="Ảnh slider 3">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/4.jpg" alt="Ảnh slider 4">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/5.jpg" alt="Ảnh slider 5">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/6.jpg" alt="Ảnh slider 6">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/7.jpg" alt="Ảnh slider 7">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/8.jpg" alt="Ảnh slider 8">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/9.jpg" alt="Ảnh slider 9">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/10.jpg" alt="Ảnh slider 10">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/11.jpg" alt="Ảnh slider 11">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/slider/12.jpg" alt="Ảnh slider 12">
+                </div>
+            </div>
+
+            <!-- Slider Controls -->
+            <button class="slider__btn slider__btn--prev" aria-label="Ảnh trước">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="slider__btn slider__btn--next" aria-label="Ảnh tiếp theo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <!-- Slider Thumbnails -->
+            <div class="slider__dots">
+                <button class="slider__dot slider__dot--active" aria-label="Thumbnail slide 1"><img src="assets/images/slider/1.jpg" alt="Thumbnail 1"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 2"><img src="assets/images/slider/2.jpg" alt="Thumbnail 2"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 3"><img src="assets/images/slider/3.jpg" alt="Thumbnail 3"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 4"><img src="assets/images/slider/4.jpg" alt="Thumbnail 4"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 5"><img src="assets/images/slider/5.jpg" alt="Thumbnail 5"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 6"><img src="assets/images/slider/6.jpg" alt="Thumbnail 6"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 7"><img src="assets/images/slider/7.jpg" alt="Thumbnail 7"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 8"><img src="assets/images/slider/8.jpg" alt="Thumbnail 8"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 9"><img src="assets/images/slider/9.jpg" alt="Thumbnail 9"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 10"><img src="assets/images/slider/10.jpg" alt="Thumbnail 10"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 11"><img src="assets/images/slider/11.jpg" alt="Thumbnail 11"></button>
+                <button class="slider__dot" aria-label="Thumbnail slide 12"><img src="assets/images/slider/12.jpg" alt="Thumbnail 12"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Video Section -->
+    <section id="gallery" class="video-gallery">
+        <div class="container-video">
+            <div class="video-slider-wrapper">
+                <div class="video-slider-container">
+                    <div class="video-track">
+                        <div class="video-item">
+                            <div class="video-thumbnail">
+                                <video src="assets/video/1.mp4" controls></video>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-thumbnail">
+                                <video src="assets/video/2.mp4" controls></video>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-thumbnail">
+                                <video src="assets/video/3.mp4" controls></video>
+                            </div>
+                        </div>
+                        <div class="video-item">
+                            <div class="video-thumbnail">
+                                <video src="assets/video/4.mp4" controls></video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Play Button -->
+                    <button class="video-play-btn" aria-label="Phát video">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </button>
+
+                    <!-- Video Controls -->
+                    <button class="video-btn video-btn--prev" aria-label="Video trước">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="video-btn video-btn--next" aria-label="Video tiếp theo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Video Dots -->
+                <div class="video-dots">
+                    <button class="video-dot video-dot--active" aria-label="Video 1"></button>
+                    <button class="video-dot" aria-label="Video 2"></button>
+                    <button class="video-dot" aria-label="Video 3"></button>
+                    <button class="video-dot" aria-label="Video 4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Info Section -->
+    <section id="product-info" class="product-info">
+        <div class="container">
+            <h2 class="section-title">BumasJP - Đai chườm ấm massage bụng kinh cao cấp</h2>
+            
+            <div class="price-label-section">
+                <div class="price-display">
+                    <span class="price-label">Giá</span>
+                    <div class="price-value">11,000円</div>
+                </div>
+                <div class="shipping-badges">
+                    <span class="badge-stock">✓ Hàng sẵn tại Nhật</span>
+                    <span class="shipping-time">⚡ Ship 1-2 ngày</span>
+                </div>
+                <p class="shipping-note">Giá trên đã bao gồm phí ship toàn Nhật Bản (Trừ Hokkaido & Okinawa)</p>
+                
+                <div class="color-selector">
+                    <h3 class="color-title">Màu Sắc</h3>
+                    <div class="color-gallery">
+                        <div class="color-item">
+                            <img src="assets/images/maumay/trang.jpeg" alt="Màu Trắng" class="color-thumbnail" data-lightbox="maumay-trang">
+                            <p class="color-label">Trắng</p>
+                        </div>
+                        <div class="color-item">
+                            <img src="assets/images/maumay/hong.jpeg" alt="Màu Hồng" class="color-thumbnail" data-lightbox="maumay-hong">
+                            <p class="color-label">Hồng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="feature-highlights__title">Đặc điểm nổi bật</h3>
+            <div class="feature-highlights">
+
+                <article class="feature-item">
+                    <h4 class="feature-item__heading">🔥 CHƯỜM ẤM – XOA DỊU NGÀY DÂU</h4>
+                    <ul class="feature-item__list">
+                        <li>Chườm ấm nhanh, dễ chịu khi tiếp xúc với da</li>
+                        <li>Hỗ trợ thư giãn vùng bụng, giảm cảm giác khó chịu trong kỳ kinh</li>
+                    </ul>
+                </article>
+
+                <article class="feature-item">
+                    <h4 class="feature-item__heading">💆 MASSAGE BỤNG – LƯNG THƯ GIÃN</h4>
+                    <ul class="feature-item__list">
+                        <li>Đầu rung silicone đa điểm cho cảm giác massage êm ái</li>
+                        <li>Hỗ trợ thư giãn vùng bụng và lưng</li>
+                    </ul>
+                </article>
+
+                <article class="feature-item">
+                    <h4 class="feature-item__heading">✨ HỖ TRỢ CHĂM SÓC DA*</h4>
+                    <ul class="feature-item__list">
+                        <li>Ánh sáng đỏ 660nm hỗ trợ lưu thông tuần hoàn dưới da</li>
+                        <li>Hỗ trợ duy trì độ săn chắc và đàn hồi của da</li>
+                    </ul>
+                </article>
+
+                <article class="feature-item">
+                    <h4 class="feature-item__heading">⚙️ DỄ DÙNG – TUỲ CHỈNH LINH HOẠT</h4>
+                    <ul class="feature-item__list">
+                        <li>Chườm ấm và massage điều chỉnh độc lập</li>
+                        <li>Nhiều chế độ phù hợp nhu cầu sử dụng</li>
+                    </ul>
+                </article>
+
+                <p class="feature-note">(*Hiệu quả có thể khác nhau tuỳ cơ địa)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Description Section -->
+    <section id="product-description" class="product-desc-section">
+        <div class="container">
+            <h2 class="section-title">Mô Tả Sản Phẩm</h2>
+            
+            <div class="product-desc-gallery">
+                <div class="desc-images-wrapper">
+                    <div class="desc-images-container" id="descImagesContainer">
+                        <!-- Images will be dynamically loaded here -->
+                    </div>
+                </div>
+                
+                <div class="desc-actions">
+                    <button class="btn-expand" id="expandDescBtn" style="display: none;">
+                        Xem thêm
+                    </button>
+                    <button class="btn-collapse" id="collapseDescBtn" style="display: none;">
+                        Rút gọn
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="customer-reviews" class="customer-reviews">
+        <div class="container">
+            <h2 class="section-title">Đánh Giá Từ Khách Hàng</h2>
+            <p class="section-subtitle">Phản hồi thực tế từ khách đã sử dụng sản phẩm</p>
+
+            <div class="review-slider reveal" id="customerReviewSlider">
+                <button class="review-nav review-nav--prev" aria-label="Ảnh đánh giá trước">&#10094;</button>
+                <div class="review-slider__viewport">
+                    <img id="customerReviewImage" class="review-slider__image" src="" alt="Đánh giá khách hàng">
+                </div>
+                <button class="review-nav review-nav--next" aria-label="Ảnh đánh giá tiếp theo">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">✕</button>
+            <img id="lightboxImage" src="" alt="">
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">&copy; 2026 BumasJP. Tất cả các quyền được bảo lưu.</p>
+            <p class="footer__tagline">BumasJP - Món quà ý nghĩa - Thay lời yêu thương</p>
+        </div>
+    </footer>
+
+    <div class="consult-fixed-bar" aria-label="Tư vấn nhanh">
+        <a href="https://m.me/nekoquatang" class="consult-fixed-bar__btn" target="_blank" rel="noopener noreferrer">Tư Vấn Tại Nhật</a>
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
